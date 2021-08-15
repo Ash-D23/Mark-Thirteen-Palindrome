@@ -27,7 +27,7 @@ function palindrome(){
   }
   else {
     var [count, nextDate] = getNextPalindromeDate(date);
-    output.innerText=`The nearest palidrome date is ${nextDate.year+"-"+nextDate.month+"-"+nextDate.day}. You missed by ${count} days`
+    output.innerText=`The nearest palidrome date is ${nextDate.day+"-"+nextDate.month+"-"+nextDate.year}. You missed by ${count} days`
     output.classList.remove("hide");
 
   }
