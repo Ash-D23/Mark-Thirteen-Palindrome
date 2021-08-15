@@ -9,6 +9,11 @@ var output = document.querySelector(".output")
 function palindrome(){
   var x=user_date.value
 
+  if (x===""){
+    alert("enter date")
+    return
+  }
+
   var date={
   year : Number(x.substring(0, 4)),
   month : Number(x.substring(5, 7)),
